@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray"
-    android:padding="24dp"
-    tools:context=".MainActivity">
+    android:background="@color/gray">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,7 +26,7 @@
                     android:id="@+id/imageView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:srcCompat="@drawable/profile"
+                    android:background="@drawable/profile"
                     android:contentDescription="Avatar" />
 
                 <TextView
@@ -57,7 +55,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        tools:srcCompat="@drawable/garnet"
+                        android:background="@drawable/garnet"
                         android:contentDescription="Icon" />
 
                     <TextView
@@ -67,7 +65,7 @@
                         android:textColor="@color/white"
                         android:layout_marginStart="4dp"
                         android:layout_marginEnd="4dp"
-                        android:text="TextView" />
+                        android:text="3456" />
 
                     <ImageView
                         android:id="@+id/imageView3"
@@ -102,7 +100,8 @@
                         android:layout_height="wrap_content"
                         android:contentDescription="PlusIcon"
                         tools:ignore="ImageContrastCheck"
-                        tools:srcCompat="@drawable/btn1" />
+                        android:layout_marginHorizontal="24dp"
+                        android:background="@drawable/btn1" />
 
                     <TextView
                         android:id="@+id/textView3"
@@ -131,7 +130,8 @@
                         android:layout_height="wrap_content"
                         android:contentDescription="SingleplayerIcon"
                         tools:ignore="ImageContrastCheck"
-                        tools:srcCompat="@drawable/btn2" />
+                        android:layout_marginHorizontal="24dp"
+                        android:background="@drawable/btn2" />
 
                     <TextView
                         android:id="@+id/textView4"
@@ -160,7 +160,8 @@
                         android:layout_height="wrap_content"
                         android:contentDescription="MultiplayerIcon"
                         tools:ignore="ImageContrastCheck"
-                        tools:srcCompat="@drawable/btn3" />
+                        android:layout_marginHorizontal="24dp"
+                        android:background="@drawable/btn3" />
 
                     <TextView
                         android:id="@+id/textView5"
@@ -204,8 +205,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="24dp"
-                android:layout_marginTop="16dp"
                 android:orientation="horizontal"
                 android:baselineAligned="false">
 
@@ -213,9 +212,13 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
+                    android:elevation="3dp"
                     android:background="@drawable/white_background"
                     android:gravity="center"
+                    android:layout_marginStart="24dp"
                     android:layout_marginEnd="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -224,7 +227,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         tools:ignore="ImageContrastCheck"
-                        tools:srcCompat="@drawable/cat1"
+                        android:background="@drawable/cat1"
                         android:contentDescription="trophyIcon" />
 
                     <TextView
@@ -242,9 +245,13 @@
                     android:layout_width="0dp"
                     android:layout_height="55dp"
                     android:layout_weight="0.5"
+                    android:elevation="3dp"
                     android:background="@drawable/white_background"
                     android:gravity="center"
                     android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -252,7 +259,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        tools:srcCompat="@drawable/cat2"
+                        android:background="@drawable/cat2"
                         android:contentDescription="historyIcon" />
 
                     <TextView
@@ -269,8 +276,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="24dp"
-                android:layout_marginTop="16dp"
+
                 android:orientation="horizontal"
                 android:baselineAligned="false">
 
@@ -278,9 +284,13 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
+                    android:elevation="3dp"
                     android:background="@drawable/white_background"
                     android:gravity="center"
+                    android:layout_marginStart="24dp"
                     android:layout_marginEnd="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -288,12 +298,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        tools:srcCompat="@drawable/cat3"
+                        android:background="@drawable/cat3"
                         android:contentDescription="ballIcon" />
 
                     <TextView
                         android:id="@+id/textView8"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="16dp"
                         android:layout_weight="1"
@@ -306,9 +316,13 @@
                     android:layout_width="0dp"
                     android:layout_height="55dp"
                     android:layout_weight="0.5"
+                    android:elevation="3dp"
                     android:background="@drawable/white_background"
                     android:gravity="center"
                     android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -318,11 +332,11 @@
                         android:layout_marginStart="16dp"
                         android:contentDescription="artIcon"
                         tools:ignore="ImageContrastCheck"
-                        tools:srcCompat="@drawable/cat4" />
+                        android:background="@drawable/cat4" />
 
                     <TextView
                         android:id="@+id/textView9"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="16dp"
                         android:layout_weight="1"
@@ -335,12 +349,61 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:background="@drawable/navy_gradient_background"
-                android:layout_margin="24dp">
+                android:layout_margin="24dp"
+                android:background="@drawable/navy_gradient_background">
 
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="imageCard1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@drawable/coins" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Tente a sorte e\nganhe mais pontos"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="28sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/purple_background"
+                    android:gravity="center"
+                    android:text="Tentar agora!"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView12"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12"
+                    tools:ignore="TextContrastCheck" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </ScrollView>
 
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cnb_iconSize="20dp"
+        app:cnb_menuResource="@menu/bottom_menu"
+        app:cnb_orientationMode="horizontal"
+        app:cnb_radius="50dp"
+
+        android:background="@color/white"
+        app:cnb_unselectedColor="#757575"
+        app:cnb_badgeColor="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
