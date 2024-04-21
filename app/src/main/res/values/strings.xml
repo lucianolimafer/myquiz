@@ -2,9 +2,12 @@
     <string name="app_name">myquiz</string>
 
 
-<!--    Bottom Menu-->
+    <!--    Bottom Menu-->
     <string name="menu_home">Início</string>
     <string name="menu_ranking">Ranking</string>
     <string name="menu_favorites">Favoritos</string>
     <string name="menu_profile">Perfil</string>
+    <string name="leader_btn_monthly">Mensal</string>
+    <string name="leader_btn_weekly">Semanal</string>
+    <string name="leader_btn_general">Geral</string>
 </resources>
