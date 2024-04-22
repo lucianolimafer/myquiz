@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray"
-    tools:context=".LeaderActivity">
+    tools:context=".Activity.LeaderActivity">
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -132,7 +132,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="4dp"
-                            tools:srcCompat="@drawable/garnet" />
+                            android:background="@drawable/garnet" />
 
                         <TextView
                             android:id="@+id/scoreTop3Text"
@@ -190,7 +190,7 @@
                             app:layout_constraintBottom_toTopOf="@+id/pic1"
                             app:layout_constraintEnd_toEndOf="@+id/pic1"
                             app:layout_constraintStart_toStartOf="@+id/pic1"
-                            tools:srcCompat="@drawable/crown" />
+                            android:background="@drawable/crown" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -217,7 +217,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="4dp"
-                            tools:srcCompat="@drawable/garnet" />
+                            android:background="@drawable/garnet" />
 
                         <TextView
                             android:id="@+id/scoreTop1Text"
@@ -295,7 +295,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="4dp"
-                            tools:srcCompat="@drawable/garnet" />
+                            android:background="@drawable/garnet" />
 
                         <TextView
                             android:id="@+id/scoreTop2Text"
@@ -317,10 +317,10 @@
                 android:layout_height="match_parent" />
 
         </LinearLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <com.ismaeldivita.chipnavigation.ChipNavigationBar
-        android:id="@+id/menu2"
+        android:id="@+id/bottomMenu"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@color/white"
